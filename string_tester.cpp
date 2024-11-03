@@ -20,13 +20,17 @@ int main()
     {
         cout << "'apple' is not in the phrase. \n\n";
     }
+    for (unsigned int i = 0; i < phrase.size(); ++i)
+    {
+        cout << "Character at position " << i << " is: " << phrase[i] << endl;
+    }
     phrase.erase(4, 5);
     cout << "The phrase is now: " << phrase << "\n\n";
     phrase.erase(4);
     cout << "The phrase is now: " << phrase << "\n\n";
     phrase.erase();
     cout << "The phrase is now: " << phrase << "\n\n";
-    if(phrase.empty())
+    if (phrase.empty())
     {
         cout << "\nThe phrase is no more \n";
     }
